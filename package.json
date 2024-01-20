@@ -19,9 +19,8 @@
     "react-router-dom": "^6.21.3",
     "react-scripts": "5.0.1",
     "ts-jest": "^29.1.1",
-    "web-vitals": "^2.1.4",
-    "test": "jest"
-  },
+    "web-vitals": "^2.1.4"
+  },  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
