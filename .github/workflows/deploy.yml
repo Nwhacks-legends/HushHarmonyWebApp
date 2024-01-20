@@ -2,8 +2,6 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
   workflow_dispatch:
 
 permissions:
@@ -36,6 +34,7 @@ jobs:
 
   build:
     needs: test
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -60,6 +59,7 @@ jobs:
 
   deploy:
     needs: build
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
