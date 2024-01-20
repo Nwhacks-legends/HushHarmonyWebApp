@@ -13,7 +13,7 @@ function App() {
       <div className="sidebar">
         <ul>
           <li><Link to="/">MappedIn Page</Link></li>
-          <li><Link to="/other">Other Page</Link></li>
+          <li><Link to="/other">Google Maps Overlay</Link></li>
         </ul>
       </div>
 
