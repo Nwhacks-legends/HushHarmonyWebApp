@@ -4,8 +4,8 @@ import {
   TMapViewOptions,
 } from "@mappedin/mappedin-js";
 import "@mappedin/mappedin-js/lib/mappedin.css";
-import useMapView from "./hooks/useMapView";
-import useVenueMaker from "./hooks/useVenueMaker";
+import useMapView from "../hooks/useMapView";
+import useVenueMaker from "../hooks/useVenueMaker";
 
 const MappedInPage = () => {
   const credentials = useMemo(

@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* App.css */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #f8f9fa; /* Light gray background */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #333; /* Dark text for better readability */
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background-color: #e9ecef; /* Light hover effect */
+}
+
+.content {
+  margin-left: 250px; /* Same as sidebar width */
+  padding: 20px;
+}
