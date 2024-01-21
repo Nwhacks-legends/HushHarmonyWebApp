@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>React App</title>
+    <!-- Redirection Script -->
+    <script>
+      (function() {
+        // This script ensures that GitHub Pages redirects correctly in a SPA setup
+        if (document.location.pathname.includes('/404.html')) {
+          var location = document.location.href;
+          var redirectedUrl = location.replace('/404.html', '');
+          history.replaceState(null, null, redirectedUrl);
+        }
+      })();
+    </script>
+  </head>
+  <body id="tbody">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
