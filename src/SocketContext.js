@@ -12,7 +12,7 @@ export const SocketProvider = ({ children }) => {
     const [socket, setSocket] = useState();
 
     useEffect(() => {
-        const newSocket = io('http://localhost:8080'); // Replace with your server URL and port
+        const newSocket = io('https://hushh-harmony-websever.onrender.com');
         setSocket(newSocket);
 
         return () => newSocket.close();
