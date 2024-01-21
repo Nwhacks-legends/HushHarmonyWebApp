@@ -12,6 +12,7 @@
     "babel-jest": "^29.7.0",
     "bootstrap": "^5.3.2",
     "browser-router": "^0.2.0",
+    "canvas": "^2.11.2",
     "framer-motion": "^10.18.0",
     "jest": "^29.7.0",
     "nodemon": "^3.0.3",
