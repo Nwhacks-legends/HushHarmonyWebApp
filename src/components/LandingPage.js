@@ -32,7 +32,7 @@ const LandingPage = () => {
           animate={{ x: 20, opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
         >
-          Hush Harmony
+          <span className="text-hush">Hush</span> Harmony
         </motion.p>
       </motion.div>
 

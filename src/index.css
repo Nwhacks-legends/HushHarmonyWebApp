@@ -52,3 +52,12 @@ body {
   text-decoration: none;
   font-size: 1.2rem;
 }
+
+.text-color {
+  color: #ecbd9a;
+  font-size: 1.1rem;
+}
+
+.text-hush {
+  color: #ecbd9a;
+}
