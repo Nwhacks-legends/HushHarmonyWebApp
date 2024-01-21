@@ -30,13 +30,13 @@ export default function useMapView(
 
   const elementRef = useCallback(
     (element) => {
-      if (element == null) {
+      if (element === null) {
         return;
       }
 
       mapRef.current = element;
 
-      if (mapView == null && venue != null && isRendering.current == false) {
+      if (mapView === null && venue != null && isRendering.current === false) {
         renderVenue(element, venue, options);
       }
     },
