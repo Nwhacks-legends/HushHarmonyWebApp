@@ -1,8 +1,5 @@
 import React, { useEffect, useMemo } from "react";
-import {
-  TGetVenueMakerOptions,
-  TMapViewOptions,
-} from "@mappedin/mappedin-js";
+import { TGetVenueMakerOptions, TMapViewOptions } from "@mappedin/mappedin-js";
 import "@mappedin/mappedin-js/lib/mappedin.css";
 import useMapView from "../hooks/useMapView";
 import useVenueMaker from "../hooks/useVenueMaker";
@@ -12,7 +9,8 @@ const MappedInPage = () => {
     () => ({
       mapId: "659efcf1040fcba69696e7b6",
       key: "65a0422df128bbf7c7072349",
-      secret: "5f72653eba818842c16c4fdb9c874ae02100ffced413f638b7bd9c65fd5b92a4",
+      secret:
+        "5f72653eba818842c16c4fdb9c874ae02100ffced413f638b7bd9c65fd5b92a4",
     }),
     []
   );
