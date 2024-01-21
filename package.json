@@ -1,7 +1,6 @@
 {
   "name": "hushharmonywebapp",
   "version": "0.1.0",
-  "type": "module",
   "private": true,
   "homepage": "https://nwhacks-legends.github.io/HushHarmonyWebApp/",
   "dependencies": {
