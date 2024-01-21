@@ -1,28 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import React from "react";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import LandingPage from './components/LandingPage';
 import MappedInPage from './components/MappedInPage';
 import GoogleMapsPage from './components/GoogleMapsPage';
-
-
+import './App.css';
 
 function App() {
-
   return (
     <BrowserRouter>
-      <div className="sidebar">
-        <ul>
-          <li><Link to="/">MappedIn Page</Link></li>
-          <li><Link to="/other">Google Maps Overlay</Link></li>
-        </ul>
-      </div>
-
-      <div className="content">
-        <Routes>
-          <Route path="/" element={<MappedInPage />} />
-          <Route path="/other" element={<GoogleMapsPage />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/mappedinview" element={<MappedInPage />} />
+        <Route path="/googlemapview" element={<GoogleMapsPage />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
     </BrowserRouter>
   );
 }

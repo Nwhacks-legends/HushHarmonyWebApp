@@ -20,6 +20,8 @@ export default function useMapView(
       console.log(
         `[useMapView] Rendering "${venue.venue.name}" to element "${el.id}".`
       );
+      console.log(`[useMapView] Options: ${JSON.stringify(options)}`
+      );
       const _mapView = await showVenue(el, venue, options);
       setMapView(_mapView);
 

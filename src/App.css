@@ -45,7 +45,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  background-color: #f8f9fa; /* Light gray background */
+  background-color: #233843; /* Light gray background */
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -67,7 +67,7 @@
 }
 
 .sidebar ul li a:hover {
-  background-color: #e9ecef; /* Light hover effect */
+  background-color: #233843; /* Light hover effect */
 }
 
 .content {
