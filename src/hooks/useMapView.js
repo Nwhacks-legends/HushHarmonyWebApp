@@ -17,11 +17,6 @@ export default function useMapView(
 
       isRendering.current = true;
 
-      console.log(
-        `[useMapView] Rendering "${venue.venue.name}" to element "${el.id}".`
-      );
-      console.log(`[useMapView] Options: ${JSON.stringify(options)}`
-      );
       const _mapView = await showVenue(el, venue, options);
       setMapView(_mapView);
 
@@ -38,7 +33,7 @@ export default function useMapView(
 
       mapRef.current = element;
 
-      if (mapView == null && venue != null && isRendering.current == false) {
+      if (mapView === null && venue != null && isRendering.current === false) {
         renderVenue(element, venue, options);
       }
     },

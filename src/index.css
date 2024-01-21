@@ -61,3 +61,33 @@ body {
 .text-hush {
   color: #ecbd9a;
 }
+
+/* Green-Yellow Gradient */
+.bg-green-yellow-gradient {
+  background-image: linear-gradient(to right, #9ACD32, #FFD700);
+}
+
+/* Yellow-Orange Gradient */
+.bg-yellow-orange-gradient {
+  background-image: linear-gradient(to right, #ff7300, #FFD700);
+}
+
+/* Orange-Red Gradient */
+.bg-orange-red-gradient {
+  background-image: linear-gradient(to right, #810202, #e70505);
+}
+
+/* Custom CSS for the heat map marker */
+.marker {
+  filter: blur(8px); /* Blur effect */
+  border-radius: 9999px; /* Rounded shape */
+  padding: 8px; /* Padding around the text */
+  color: white; /* Text color */
+  text-align: center; /* Center the text */
+}
+
+
+/* Tailwind utility for rounded-full */
+.rounded-full {
+  border-radius: 9999px;
+}

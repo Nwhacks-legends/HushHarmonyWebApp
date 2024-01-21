@@ -13,11 +13,9 @@ export default function useVenue(options) {
     let ignore = false;
     const fetchData = async () => {
       try {
-        console.log(`[useVenueMaker] Fetching map with ID "${options.mapId}"`);
         const data = await getVenueMaker(options);
         // Update state variable after data is fetched
         if (!ignore) {
-          console.log(`[useVenueMaker] Received map "${data.venue.name}"`);
           setVenue(data);
         }
       } catch (e) {
