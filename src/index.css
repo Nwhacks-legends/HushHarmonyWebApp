@@ -14,7 +14,7 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
-  background-color: #233843;
+  
 }
 
 /* Custom CSS Variables */
@@ -23,14 +23,14 @@
   --color-secondary: #e74c3c;
   --color-accent: #f39c12;
   --color-bg: #233843;
-  --color-text: #2c3e50;
+  --color-text: #ffe6ca;
   --color-ecru: #ecbd9a; /* New Variable for Ecru */
   --color-peach: #ffe6ca; /* New Variable for Peach */
 }
 
 /* Body Style */
 body {
-  background-color: var(--color-bg);
+  background-color: var(--color-bg, #233843);
   color: var(--color-text);
 }
 
