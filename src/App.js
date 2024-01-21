@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate, HashRouter } from "react-router-dom";
 import { SocketProvider } from './SocketContext';
 import LandingPage from './components/LandingPage';
 import MappedInPage from './components/MappedInPage';
@@ -10,7 +10,7 @@ import './App.css';
 function App() {
   return (
     <SocketProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/mappedinview" element={<MappedInPage />} />
@@ -18,7 +18,7 @@ function App() {
           <Route path="/record" element={<MicrophonePage />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </SocketProvider>
   );
 }
