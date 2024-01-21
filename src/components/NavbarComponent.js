@@ -29,13 +29,16 @@ const NavbarComponent = ({ isSidebarOpen, toggleSidebar }) => {
       >
         <ul className="mt-16 p-3">
           <li className="py-3 hover:bg-gray-900 rounded-sm">
-            <Link to="/" className="hover:text-gray-300 block px-1">HomePage</Link>
+            <Link to="/" className="hover:text-gray-300 block px-1">Home</Link>
           </li>
           <li className="py-3 hover:bg-gray-900 rounded-sm">
             <Link to="/mappedinview" className="hover:text-gray-300 block px-1">MappedIn View</Link>
           </li>
           <li className="py-3 hover:bg-gray-900 rounded-sm">
             <Link to="/googlemapview" className="hover:text-gray-300 block px-1">Google Maps Overlay</Link>
+          </li>
+          <li className="py-3 hover:bg-gray-900 rounded-sm">
+            <Link to="/record" className="hover:text-gray-300 block px-1">Record Noise</Link>
           </li>
         </ul>
       </motion.div>
