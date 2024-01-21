@@ -1,8 +1,5 @@
 import React, { useEffect, useMemo } from "react";
-import {
-  TGetVenueMakerOptions,
-  TMapViewOptions,
-} from "@mappedin/mappedin-js";
+
 import "@mappedin/mappedin-js/lib/mappedin.css";
 import useMapView from "../hooks/useMapView";
 import useVenueMaker from "../hooks/useVenueMaker";

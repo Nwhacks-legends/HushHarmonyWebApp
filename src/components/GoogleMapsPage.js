@@ -29,8 +29,20 @@ const GoogleMapsPage = () => {
     });
 
     const heatmapData = [
-      new window.google.maps.LatLng(49.2765, -123.2177),
-      new window.google.maps.LatLng(49.2765, -123.2177),
+        {location: new window.google.maps.LatLng(49.2765, -123.2177), weight: 0.5},
+        new window.google.maps.LatLng(49.2765, -123.2177),
+        {location: new window.google.maps.LatLng(49.2765, -123.2177), weight: 2},
+        {location: new window.google.maps.LatLng(49.2765, -123.2177), weight: 3},
+        {location: new window.google.maps.LatLng(49.2765, -123.2177), weight: 2},
+        new window.google.maps.LatLng(49.2765, -123.2177),
+        {location: new window.google.maps.LatLng(47.2765, -126.2177), weight: 0.5},
+        {location: new window.google.maps.LatLng(47.2765, -126.2177), weight: 3},
+        {location: new window.google.maps.LatLng(47.2765, -126.2177), weight: 2},
+        new window.google.maps.LatLng(47.2765, -126.2177),
+        {location: new window.google.maps.LatLng(47.2765, -126.2177), weight: 0.5},
+        new window.google.maps.LatLng(47.2765, -126.2177),
+        {location: new window.google.maps.LatLng(49.262536, -123.254053), weight: 2},
+        {location: new window.google.maps.LatLng(49.262536, -123.254053), weight: 3}
     ];
 
     new window.google.maps.visualization.HeatmapLayer({
