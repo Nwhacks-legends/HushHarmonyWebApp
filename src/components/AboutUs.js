@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const AboutUs = () => {
   return (
@@ -12,7 +12,18 @@ const AboutUs = () => {
     >
       <h1 className="text-2xl font-bold mb-4">About Us</h1>
       <p className="text-base">
-        Welcome to our Hush Harmony! Here is some information about us!...
+        Welcome to our innovative solution designed for those seeking quieter
+        environments and individuals with hearing aids who prefer less noisy
+        locations. Our project, developed by a dedicated team from Simon Fraser
+        University, focuses on measuring and mapping noise levels in various
+        areas. Through our user-friendly mobile app, users contribute to a
+        collective effort by sharing noise data from their locations. This data
+        is then transformed into easy-to-understand visual maps, allowing
+        everyone to easily find areas with lower noise levels. Whether you're
+        looking for a peaceful spot to study, relax, or if you use a hearing aid
+        and need to find a comfortable auditory environment, our tool is
+        designed to guide you to the perfect location. Experience the ease of
+        finding your quiet haven with our innovative noise mapping solution.
       </p>
     </motion.div>
   );
