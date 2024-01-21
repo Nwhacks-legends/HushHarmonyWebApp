@@ -42,7 +42,7 @@ const MappedInPage = () => {
     let gradientClass;
     if (noiseData < 55) {
       gradientClass = "bg-green-yellow-gradient";
-    } else if (noiseData >= 55 && noiseData <= 85) {
+    } else if (noiseData >= 55 && noiseData <= 80) {
       gradientClass = "bg-yellow-orange-gradient";
     } else {
       gradientClass = "bg-orange-red-gradient";
@@ -92,7 +92,6 @@ const MappedInPage = () => {
         }`}
       >
         <div className="p-4 ml-2">
-          <h1>This is the MappedIn Page</h1>
           <p>Welcome to the MappedIn page!</p>
           <div id="ui">
             {venue?.venue.name ?? "Loading..."}
