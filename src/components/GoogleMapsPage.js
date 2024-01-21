@@ -1,54 +1,50 @@
-import React, { useState, useEffect } from 'react';
-import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
-
-const libraries = ['places'];
-const mapContainerStyle = {
-  width: '100vw',
-  height: '100vh',
-};
+import React, { useEffect } from 'react';
 
 const GoogleMapsPage = () => {
-  const [currentLocation, setCurrentLocation] = useState({
-    lat: 49.2606, // default latitude to ubc
-    lng: 123.2460, // default longitude to ubc
-  });
-  const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: 'AIzaSyD_WhDv78_GZQBsEvVGtxcAz4r3z2zt90w',
-    libraries,
-  });
+  const loadGoogleMapsScript = () => {
+    if (window.google) {
+        return;
+      }
+    
+      const scriptId = 'google-maps-script';
+    
+      if (document.getElementById(scriptId)) {
+        return;
+      }
+    
+      const script = document.createElement('script');
+      script.id = scriptId;
+      script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyD_WhDv78_GZQBsEvVGtxcAz4r3z2zt90w&libraries=visualization&callback=initMap`;
+      script.async = true;
+      document.head.appendChild(script);
+    };
+    
+
+  window.initMap = () => {
+    // Initialize your map here
+    const map = new window.google.maps.Map(document.getElementById('map'), {
+      zoom: 13,
+      center: { lat: 49.2765, lng: -123.2177},
+      mapTypeId: 'satellite',
+    });
+
+    const heatmapData = [
+      new window.google.maps.LatLng(49.2765, -123.2177),
+      new window.google.maps.LatLng(49.2765, -123.2177),
+    ];
+
+    new window.google.maps.visualization.HeatmapLayer({
+      data: heatmapData,
+      map: map,
+    });
+  };
 
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        setCurrentLocation({
-          lat: position.coords.latitude,
-          lng: position.coords.longitude,
-        });
-      },
-      () => {
-        // handle error, or use default location
-      }
-    );
+    loadGoogleMapsScript();
   }, []);
 
-  if (loadError) {
-    return <div>Error loading maps</div>;
-  }
-
-  if (!isLoaded) {
-    return <div>Loading maps</div>;
-  }
-
   return (
-    <div>
-      <GoogleMap
-        mapContainerStyle={mapContainerStyle}
-        zoom={10}
-        center={currentLocation}
-      >
-        <Marker position={currentLocation} />
-      </GoogleMap>
-    </div>
+    <div id="map" style={{ height: '100vh', width: '100%' }} />
   );
 };
 
