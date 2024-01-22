@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# HushHarmony: Realtime Geospatial Noise Mapping
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**HushHarmony** - Making quiet moments easy and accessible for everyone. We are proud to be the @nwhacks x MappedIn Sponsor Award Winner 🎖️. Our project, developed by a passionate team from Simon Fraser University, focuses on real-time measurement and mapping of noise levels.
+<p align="center">
+    <img src="https://github.com/Nwhacks-legends/HushHarmonyWebApp/assets/64120482/722721bf-92b1-4fa4-8ba0-c4a6714d23ca" alt="homepage" />
+</p>
 
-## Available Scripts
 
-In the project directory, you can run:
+## Problem
 
-### `npm start`
+Noise pollution is a significant challenge in our modern world, affecting various groups of people in different ways:
+- **Individuals with PTSD:** Noise can be a trigger for those with PTSD, making it essential to find calm environments.
+- **Students & Academics:** A quiet study space is crucial for concentration and effective learning.
+- **Home Seekers:** People looking to rent or buy a home often seek quieter neighborhoods for a better quality of life.
+- **General Public Seeking Tranquility:** In a busy world, finding a peaceful spot for relaxation and quiet activities is increasingly difficult.
+  
+HushHarmony addresses these needs by providing real-time sound level data, making it easier to locate and enjoy quieter spaces.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p align="center">
+    <img src="https://github.com/Nwhacks-legends/HushHarmonyWebApp/assets/64120482/1e3d4efa-1af7-42d0-965a-abb79b0d2612" alt="noisy street" />
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Solution: HushHarmony
 
-### `npm test`
+Our application stands out with its real-time, data-driven, and user-friendly features, catering to various needs:
+- **Real-Time Data Collection:** Utilizing crowd-sourcing to gather and update noise data dynamically.
+- **User-Driven Approach:** Empowering users to contribute to and benefit from the collective noise data.
+- **Versatile Use Cases:** Ideal for anyone seeking a quiet spot, from students to homebuyers.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+Our technology choices reflect our commitment to robust and efficient solutions:
+- **React:** For a dynamic and responsive web application.
+- **React Native:** Empowers our mobile app for on-the-go data gathering.
+- **NodeJS & MongoDB Atlas:** Forms the backbone of our data management.
+- **Google API & Geolocation:** For accurate and comprehensive noise mapping.
+- **Mappedin API and SDK:** Offers detailed indoor mapping capabilities.
+  
+## Pages  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### MappedIn Web App View : 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Explore indoor noise levels with HushHarmony's MappedIn view, using color coding to indicate different noise intensities inside buildings.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="center">
+    <img src="https://github.com/Nwhacks-legends/HushHarmonyWebApp/assets/64120482/d636a877-b3e5-48b1-9495-a6ea6c45c085" alt="google map view" />
+</p>
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Google Map Web App View : 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Visualize noise levels through clustered heat maps on Google Maps with HushHarmony
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p align="center">
+    <img src="https://github.com/Nwhacks-legends/HushHarmonyWebApp/assets/64120482/30b90cb3-e340-497a-b84b-c440e68daefc" alt="google map view" />
+</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Mobile App View
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Automatically capture noise data every 15 minutes or manually with a button press using the HushHarmony mobile app. (with user's concent)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="center">
+    <img src="https://github.com/Nwhacks-legends/HushHarmonyWebApp/assets/64120482/0b162e51-bdbc-40de-a05f-2499acfb50b8" alt="google map view" width="250" />
+</p>
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Features & Future Directions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Pathfinding:** To navigate away from noisy areas.
+- **Urgent Care Reporting:** For immediate alerts in high-noise zones.
+- **Noise Level Alerts:** Warning users in areas exceeding 70 dB.
+- **Device Integration:** Planning to connect with various devices like the Apple Watch for broader data collection.
 
-### Making a Progressive Web App
+## The Experience
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+With our mobile app, users easily contribute noise data, which is visualized on maps using Google Maps and Mappedin APIs. This allows everyone from students seeking a quiet study space to PTSD sufferers needing a calm environment, to find their ideal location with ease.
 
-### Advanced Configuration
+## Our Team
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+We're a group of four students from Simon Fraser University, united by our passion for solving real-world problems through innovative technology.
 
-### Deployment
+You can visit our Devpost at : https://devpost.com/software/hushharmony
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+Join us in creating quieter, more harmonious spaces for everyone, one sound map at a time.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
