@@ -1,6 +1,6 @@
 # HushHarmony: Realtime Geospatial Noise Mapping
 
-**HushHarmony** - Making quiet moments easy and accessible for everyone. We are proud to be the @nwhacks x MappedIn Sponsor Award Winner 🎖️. Our project, developed by a passionate team from Simon Fraser University, focuses on real-time measurement and mapping of noise levels.
+**HushHarmony** - Making quiet moments easy and accessible for everyone. We are proud to be the @nwhacks x MappedIn Sponsor Award Winner 🎖️. Our project, focuses on real-time measurement and mapping of noise levels.
 <p align="center">
     <img src="https://github.com/Nwhacks-legends/HushHarmonyWebApp/assets/64120482/722721bf-92b1-4fa4-8ba0-c4a6714d23ca" alt="homepage" />
 </p>
