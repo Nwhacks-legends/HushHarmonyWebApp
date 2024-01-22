@@ -8,11 +8,13 @@
 
 ## Problem
 
-Noise pollution is a significant challenge in our modern world, affecting various groups of people in different ways:
-- **Individuals with PTSD:** Noise can be a trigger for those with PTSD, making it essential to find calm environments.
-- **Students & Academics:** A quiet study space is crucial for concentration and effective learning.
-- **Home Seekers:** People looking to rent or buy a home often seek quieter neighborhoods for a better quality of life.
-- **General Public Seeking Tranquility:** In a busy world, finding a peaceful spot for relaxation and quiet activities is increasingly difficult.
+Noise pollution significantly impacts various segments of our society:
+
+- **Health and Well-being:** Our app is a valuable tool for individuals with hearing impairments or auditory sensitivities, helping them find quieter environments conducive to better mental and physical health.
+- **Public Health and Urban Planning:** HushHarmony is instrumental for urban planners and health officials, aiding in the creation of serene and healthy urban spaces.
+- **Students and Professionals Seeking Quiet:** For effective learning and focused work, a tranquil environment is essential. Our app assists in locating peaceful study and workspaces.
+- **Home Seekers:** Ambient noise levels are a key consideration for those seeking a new residence. HushHarmony provides insights into neighborhood noise levels, aiding in informed decision-making.
+
   
 HushHarmony addresses these needs by providing real-time sound level data, making it easier to locate and enjoy quieter spaces.
 
