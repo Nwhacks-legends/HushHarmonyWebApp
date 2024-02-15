@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSocket } from "../SocketContext";
 import NavbarComponent from "./NavbarComponent";
+import axios from 'axios';
 
 const GoogleMapsPage = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -42,6 +43,28 @@ const GoogleMapsPage = () => {
       heatmapLayer.setData(heatmapData);
     }
   }, [heatmapData, heatmapLayer]);
+
+  useEffect(() => {
+    // Fetch old noise data from the server
+    const fetchOldNoiseData = async () => {
+      try {
+        const response = await axios.get('https://hushh-harmony-websever.onrender.com/get-sounds');
+        const oldData = response.data.map(data => ({
+          ...data,
+          // Adjust the property names and calculations to match the expected format
+          latitude: data.lat,
+          longitude: data.long,
+          noiseData: data.noise, // Assume this property is what you use within your convert function
+        })).map(convertNoiseDataToHeatmapPoint); // Directly use converted data
+        setHeatmapData(oldData);
+      } catch (error) {
+        console.error("Failed to fetch old noise data:", error);
+      }
+    };
+  
+    fetchOldNoiseData();
+  }, []); // This useEffect runs once on component mount to fetch old data
+  
 
   const loadGoogleMapsScript = () => {
     if (window.google) {
